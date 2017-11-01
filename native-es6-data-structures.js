@@ -2,10 +2,10 @@
 // Set objects are collections of unique values (primitive or object refs)
 // that you can iterate over
 
-// // Create a set by using an array
-// let myArray = [1, 2, 3, 3, 4, 4, 5];
-// let mySet = new Set(myArray);
-// console.log(mySet);
+// Create a set by using an array
+let myArray = [1, 2, 3, 3, 4, 4, 5];
+let mySet = new Set(myArray);
+console.log(mySet);
 
 
 
@@ -365,73 +365,73 @@
 // You must have the key to retrieve the value
 // WeakMaps are not enumerable
 
-let myWeakMap = new WeakMap();
+// let myWeakMap = new WeakMap();
 
-let key1 = {
-  id: 1
-};
+// let key1 = {
+//   id: 1
+// };
 
-let flower1 = {
-  flower: 'tulip',
-  color: 'pink'
-};
+// let flower1 = {
+//   flower: 'tulip',
+//   color: 'pink'
+// };
 
-myWeakMap.set(key1, flower1);
-console.log(myWeakMap);
-
-
-
-
-
-let key2 = {
-  id: 2
-};
-
-let flower2 = {
-  flower: 'rose',
-  color: 'white'
-};
-
-myWeakMap.set(key2, flower2);
-console.log(myWeakMap);
+// myWeakMap.set(key1, flower1);
+// console.log(myWeakMap);
 
 
 
 
 
-myWeakMap.set(key2, flower2);
-console.log(myWeakMap);
+// let key2 = {
+//   id: 2
+// };
+
+// let flower2 = {
+//   flower: 'rose',
+//   color: 'white'
+// };
+
+// myWeakMap.set(key2, flower2);
+// console.log(myWeakMap);
 
 
 
 
 
-// Check if it has a value
-console.log(myWeakMap.has(key2));
+// myWeakMap.set(key2, flower2);
+// console.log(myWeakMap);
 
 
 
 
 
-console.log(myWeakMap.has({id: 2}));
+// // Check if it has a value
+// console.log(myWeakMap.has(key2));
 
 
 
 
 
-// Get a value
-console.log(myWeakMap.get(key2));
+// console.log(myWeakMap.has({id: 2}));
 
 
 
 
 
-// Get the size (MDN)
-console.log(myWeakMap.length);
+// // Get a value
+// console.log(myWeakMap.get(key2));
 
 
 
 
 
-myWeakMap.delete(key1);
-console.log(myWeakMap);
+// // Get the size (MDN)
+// console.log(myWeakMap.length);
+
+
+
+
+
+// myWeakMap.delete(key1);
+// console.log(myWeakMap);
