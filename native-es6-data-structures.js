@@ -66,13 +66,13 @@
 //   console.log(val);
 // });
 
+// for (let [key, value] of mySet.entries()) console.log(key);
+
 // for (let item of mySet) console.log(item);
 
 // for (let item of mySet.keys()) console.log(item);
 
 // for (let item of mySet.values()) console.log(item);
-
-// for (let [key, value] of mySet.entries()) console.log(key);
 
 // // convert Set object to an Array object
 // var myNewArray = Array.from(mySet);
@@ -85,6 +85,78 @@
 // console.log(mySet);
 
 // Map
+// Map objects are collections of unique key-values
+// (primitive or object refs) that you can iterate over
+
+let myMap = new Map([
+  ['a1', 'Hello'],
+  ['b2', 'Hola']
+]);
+
+console.log(myMap);
+
+// Insert
+myMap.set('c3', 'Hallo');
+console.log(myMap);
+
+myMap.set('c3', 'Hallo');
+console.log(myMap);
+
+myMap.set('c3', 'Bonjour');
+console.log(myMap);
+
+console.log(myMap.has('d4'));
+console.log(myMap.has('a1'));
+
+console.log(myMap.get('a1'));
+
+// Delete by using key
+myMap.delete('a1');
+console.log(myMap);
+
+// Get size of myMap
+console.log(myMap.size);
+
+// This returns a new iterator obj that contains an array of [key, value]
+// for each element in the Map obj retaining insertion order
+console.log(myMap.entries());
+
+// This returns a new iterator obj that contains keys for each element
+// in the Map obj retaining insertion order
+console.log(myMap.keys());
+
+// This returns a new iterator obj that contains values for each element
+// in the Map obj retaining insertion order
+console.log(myMap.values());
+
+// Ways to iterate
+myMap.forEach(function(value, key) {
+  console.log(key + ' = ' + value);
+});
+
+for (var [key, value] of myMap) {
+  console.log(key + ' = ' + value);
+}
+
+for (var [key, value] of myMap.entries()) {
+  console.log(key + ' = ' + value);
+}
+
+// Keys only
+for (var key of myMap.keys()) {
+  console.log(key);
+}
+
+// Values only
+for (var value of myMap.values()) {
+  console.log(value);
+}
+
+
+
+// Empty out map
+myMap.clear();
+console.log(myMap);
 
 // WeakSet
 
