@@ -1,0 +1,11 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "Data structure examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Lisa Gee",
+  "license": "MIT"
+}
