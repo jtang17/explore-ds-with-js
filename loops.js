@@ -14,7 +14,7 @@ delete arr[2];
 console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200': [ 5, 6 ] ]
 
 /* FOR */
-for (let i = 0; i < arr.length; i++) console.log(`for: i is ${i}, arr[${i}] is ${arr[i]}`);
+// for (let i = 0; i < arr.length; i++) console.log(`for: i is ${i}, arr[${i}] is ${arr[i]}`);
 /*
   Iterates over: Typically numeric keys
 
@@ -28,7 +28,7 @@ for (let i = 0; i < arr.length; i++) console.log(`for: i is ${i}, arr[${i}] is $
 
 
 /* FOR ... IN */
-for (let key in arr) console.log(`for in: key is ${key}, value is ${arr[key]}`);
+// for (let key in arr) console.log(`for in: key is ${key}, value is ${arr[key]}`);
 /*
   Iterates over: Enumerable properties
 
@@ -40,14 +40,27 @@ for (let key in arr) console.log(`for in: key is ${key}, value is ${arr[key]}`);
   Termination:
 */
 
-
 /* FOR ... OF */
-  for (let value of arr) console.log(`for of: value is ${value}`);
-    // for ... of iterates over data that the iterable object defines to be iterated over.
-    // So in an array, only those with numeric keys are iterated over.
-    // for ... of did not iterate over the keys 'four' or [100, 200].
-    // for ... of can terminate by use of break, continue, throw, return.
-    // It is great to use with iterables.
+// for (let value of arr) console.log(`for of: value is ${value}`);
+/*
+  Iterates over: Data that the iterable object defines to be iterated over
+
+  Notes with this example:
+    In an array, only those with numeric keys are iterated over. Therefore, it did not iterate over the keys 'four' or [100, 200].
+
+  Use cases: Arrays, Maps, Sets, Strings, TypedArray, arguments object
+
+  Termination: break, continue, throw, return
+*/
 
 /* FOREACH */
 // arr.forEach((el, i) => console.log(`forEach: i is ${i}, el is ${el}`));
+/*
+  Iterates over:
+
+  Notes with this example:
+
+  Use cases: Arrays
+
+  Termination:
+*/
