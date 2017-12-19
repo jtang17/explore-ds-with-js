@@ -56,13 +56,13 @@ console.log('Here is myString: ', myString);
 // // Symbols are non-enumerable
 // console.log('Logging of person: ', person);
 
-// // Therefore, Object.keys() only enumerable keys, which are keys that are strings
+// // Therefore, Object.keys() only shows enumerable keys
 // console.log('Logging of Object.keys(): ', Object.keys(person));
 
 // // To get only property symbols, use Object.getOwnPropertySymbols()
 // console.log('Logging of Object.getOwnPropertySymbols(): ', Object.getOwnPropertySymbols(person));
 
-// // Note: Object.getOwnPropertyNames() ignores property symbols
+// // Note: Object.getOwnPropertyNames() ignores property symbols but gets other non-enumerables
 // console.log('Logging of Object.getOwnPropertyNames(): ', Object.getOwnPropertyNames(person));
 
 // // Note: To consider all kinds of keys, use Reflect.ownKeys()
