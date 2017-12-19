@@ -1,17 +1,24 @@
 var arr = [0, 1, 2, 3, null, undefined, true];
 
+// Add non-numeric key (String)
 arr['four'] = 4;
 
-var innerArr = [100, 200]
-arr[innerArr] = [5, 6]
+// Add non-numeric key (Array)
+var innerArr = [100, 200];
+arr[innerArr] = [5, 6];
+
+// Add non-numeric key to prototype (Function)
 Array.prototype.arrCustom = function() {};
 
+// Add non-numeric, non-enumerable key (Symbol)
 var mySymbol = Symbol('7');
 arr[mySymbol] = 7;
 
+// Delete value
 delete arr[2];
 
 console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200': [ 5, 6 ] ]
+console.log(arr.length); // 7
 
 /* FOR */
 // for (let i = 0; i < arr.length; i++) console.log(`for: i is ${i}, arr[${i}] is ${arr[i]}`);
@@ -19,9 +26,10 @@ console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200'
   Iterates over: Typically numeric keys
 
   Notes with this example:
-    Using numeric properties, it will not iterate over non-numeric keys such as 'four', [100, 200], or mySymbol.
+    Using numeric properties, it will not iterate over non-numeric keys
+    such as 'four', [100, 200], or mySymbol.
 
-  Use cases: Arrays
+  Use cases: Arrays, (Objects)
 
   Termination: break, continue, throw, return
 */
@@ -33,11 +41,12 @@ console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200'
   Iterates over: Enumerable properties
 
   Notes with this example:
-    Index 2 (or key 2) was deleted, it is now undefined, so it was not iterated over which is not enumerable. Symbols are also non-enumerable, so the key mySymbol was not iterated over either.
+    Index 2 (or key 2) was deleted, it is now undefined, which is non-enumerable.
+    Symbols are also non-enumerable, so the key mySymbol was not iterated over either.
 
-  Use cases: Objects
+  Use cases: Objects, (Arrays, Maps, Sets, Strings, TypedArray, arguments object)
 
-  Termination:
+  Termination: break, continue, throw, return
 */
 
 /* FOR ... OF */
@@ -46,9 +55,11 @@ console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200'
   Iterates over: Data that the iterable object defines to be iterated over
 
   Notes with this example:
-    In an array, only those with numeric keys are iterated over. Therefore, it did not iterate over the keys 'four' or [100, 200].
+    In an array, only those with numeric keys are iterated over.
+    Therefore, it did not iterate over the keys 'four', [100, 200],
+    arrCustom, mySymbol.
 
-  Use cases: Arrays, Maps, Sets, Strings, TypedArray, arguments object
+  Use cases: Arrays, Maps, Sets, Strings, TypedArray, arguments object, (Objects)
 
   Termination: break, continue, throw, return
 */
@@ -56,11 +67,13 @@ console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200'
 /* FOREACH */
 // arr.forEach((el, i) => console.log(`forEach: i is ${i}, el is ${el}`));
 /*
-  Iterates over:
+  Iterates over: Numeric keys
 
   Notes with this example:
+    If the array at that index does not point to anything,
+    it skips it. Therefore, index 2 is not printed.
 
   Use cases: Arrays
 
-  Termination:
+  Termination: Throw
 */
