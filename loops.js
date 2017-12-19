@@ -20,6 +20,11 @@ delete arr[2];
 console.log(arr); // [ 0, 1, empty, 3, null, undefined, true, four: 4, '100,200': [ 5, 6 ] ]
 console.log(arr.length); // 7
 
+
+
+
+
+
 /* FOR */
 // for (let i = 0; i < arr.length; i++) console.log(`for: i is ${i}, arr[${i}] is ${arr[i]}`);
 /*
@@ -33,6 +38,17 @@ console.log(arr.length); // 7
 
   Termination: break, continue, throw, return
 */
+// var weirdObj = {
+//   'h': 0,
+//   'hh': 1,
+//   'hhh': 2,
+//   'hhhh': 3
+// };
+// for (let i = 'h', counter = 0; counter < 5; i += 'h', counter++) console.log(weirdObj[i]);
+
+
+
+
 
 
 /* FOR ... IN */
@@ -49,6 +65,11 @@ console.log(arr.length); // 7
   Termination: break, continue, throw, return
 */
 
+
+
+
+
+
 /* FOR ... OF */
 // for (let value of arr) console.log(`for of: value is ${value}`);
 /*
@@ -63,6 +84,12 @@ console.log(arr.length); // 7
 
   Termination: break, continue, throw, return
 */
+
+
+
+
+
+
 
 /* FOREACH */
 // arr.forEach((el, i) => console.log(`forEach: i is ${i}, el is ${el}`));
