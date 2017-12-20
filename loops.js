@@ -100,7 +100,7 @@ console.log(arr.length); // 7
     If the array at that index does not point to anything,
     it skips it. Therefore, index 2 is not printed.
 
-  Use cases: Arrays
+  Use cases: Arrays, Sets, Maps, TypedArray
 
   Termination: Throw
 */
