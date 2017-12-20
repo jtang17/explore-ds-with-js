@@ -7,14 +7,14 @@
 // There is no list of current objects stored in the collection
 // WeakSets are not enumerable
 
-// let myWeakSet = new WeakSet();
+let myWeakSet = new WeakSet();
 
-// let objA = {
-//   color: 'red',
-// };
+let objA = {
+  color: 'red',
+};
 
-// myWeakSet.add(objA);
-// console.log(myWeakSet);
+myWeakSet.add(objA);
+console.log(myWeakSet);
 
 
 

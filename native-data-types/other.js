@@ -1,8 +1,8 @@
 // /* SPECIAL */
-// // Null
-// // Reminder null is the intentional absence of any object value
-// let answer1 = null;
-// console.log('Here is answer1: ', answer1);
+// Null
+// Reminder null is the intentional absence of any object value
+let answer1 = null;
+console.log('Here is answer1: ', answer1);
 
 
 

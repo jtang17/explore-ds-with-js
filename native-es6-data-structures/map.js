@@ -2,11 +2,11 @@
 // Map objects are collections of unique key-values
 // (primitive or object refs) that you can iterate over
 
-// let myMap = new Map([
-//   ['a1', 'Hello'],
-//   ['b2', 'Hola']
-// ]);
-// console.log(myMap);
+let myMap = new Map([
+  ['a1', 'Hello'],
+  ['b2', 'Hola']
+]);
+console.log(myMap);
 
 
 

@@ -7,19 +7,19 @@
 // You must have the key to retrieve the value
 // WeakMaps are not enumerable
 
-// let myWeakMap = new WeakMap();
+let myWeakMap = new WeakMap();
 
-// let key1 = {
-//   id: 1
-// };
+let key1 = {
+  id: 1
+};
 
-// let flower1 = {
-//   flower: 'tulip',
-//   color: 'pink'
-// };
+let flower1 = {
+  flower: 'tulip',
+  color: 'pink'
+};
 
-// myWeakMap.set(key1, flower1);
-// console.log(myWeakMap);
+myWeakMap.set(key1, flower1);
+console.log(myWeakMap);
 
 
 
