@@ -323,7 +323,8 @@ console.log(mySet);
 
 // // Get the size
 // console.log(myWeakSet.length);
-
+// // Just kidding can't get the size
+// // MDN says length should be 0
 
 
 
