@@ -34,7 +34,7 @@ console.log(arr.length); // 7
     Using numeric properties, it will not iterate over non-numeric keys
     such as 'four', [100, 200], or mySymbol.
 
-  Use cases: Arrays, (Objects), Great when you need to use the index or specific pattern
+  Use cases: Arrays, String, arguments object, (Objects), Great when you need to use the index or specific pattern
 
   Termination: break, continue, throw, return
 */
